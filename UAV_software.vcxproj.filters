@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\KLT">
+      <UniqueIdentifier>{3c5ed1e4-01e9-476f-93a4-e8e06346a33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AT">
+      <UniqueIdentifier>{2d4ea4b1-175e-4526-9489-68ef64ff6784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Orthoimage">
+      <UniqueIdentifier>{60799996-9e0d-44c9-82f0-4f7b7396adbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{8a4f2701-2a73-4436-a409-7a884ec4feda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ortho_test">
+      <UniqueIdentifier>{40d2dc22-9e43-4ee0-8010-1cf977c5f1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\KLT">
+      <UniqueIdentifier>{39cc9112-52cc-4a16-b9a0-5877a3a93b30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AT">
+      <UniqueIdentifier>{2fd60549-c027-40f4-8e6a-f29ba56c4d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Orthoimage">
+      <UniqueIdentifier>{ec047c6a-209b-4317-a4bf-34ec2d7c2205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Config">
+      <UniqueIdentifier>{b03f2db3-a2a9-4afa-ace2-fbca8923336a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ortho_test">
+      <UniqueIdentifier>{c5598d01-1e0f-4649-b4e3-2425ef896a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\AerialSimulator.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\Array.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\Bits.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\cv_fast_10.cc">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\cv_fast_10.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\cv_fast_11.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\cv_fast_12.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\cv_fast_9.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\cvfast.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\ExteriorOrientation.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\Global.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\GP.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\KLTTracker.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\Matrix.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\PhotoCoordinate.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\Point.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\RotationalMatrix.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\SeqSimAT.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KLT\SimAT.cpp">
+      <Filter>Source Files\KLT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_Array.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_Bits.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_ExteriorOrientation.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_GP.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_PhotoCoordinate.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_RotationalMatrix.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_SeqSimAT.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SimAT\AT_SimAT.cpp">
+      <Filter>Source Files\AT</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\max.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\min.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\mldivide.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\ortho_function.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\ortho_function_emxAPI.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\ortho_function_emxutil.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\ortho_function_initialize.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\ortho_function_terminate.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\rt_nonfinite.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\rtGetInf.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Orthoimage\rtGetNaN.cpp">
+      <Filter>Source Files\Orthoimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Config\file_find.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Ortho_test\ortho.cpp">
+      <Filter>Source Files\Ortho_test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\KLT\AerialSimulator.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\Array.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\Bits.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\cvfast.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\Definition.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\ExteriorOrientation.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\Global.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\GP.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\KLTTracker.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\Matrix.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\PhotoCoordinate.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\Point.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\RotationalMatrix.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\SeqSimAT.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KLT\SimAT.h">
+      <Filter>Header Files\KLT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_Array.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_Bits.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_Definition.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_ExteriorOrientation.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_GP.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_PhotoCoordinate.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_RotationalMatrix.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_SeqSimAT.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SimAT\AT_SimAT.h">
+      <Filter>Header Files\AT</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\max.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\min.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\mldivide.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\ortho_function.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\ortho_function_emxAPI.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\ortho_function_emxutil.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\ortho_function_initialize.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\ortho_function_terminate.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\ortho_function_types.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\rt_nonfinite.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\rtGetInf.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\rtGetNaN.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Orthoimage\rtwtypes.h">
+      <Filter>Header Files\Orthoimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Config\file_find.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Ortho_test\ortho.h">
+      <Filter>Header Files\Ortho_test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

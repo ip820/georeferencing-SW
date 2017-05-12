@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B2594D2-8D95-4178-9831-0848783B0ADF}</ProjectGuid>
+    <RootNamespace>UAV_software</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.24730.2</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\OpenCV_1.1\cv\include;C:\OpenCV_1.1\cxcore\include;C:\OpenCV_1.1\otherlibs\highgui;C:\OpenCV_1.1\cvaux\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV_1.1\lib;C:\OpenCV_1.1\ENHANCED_BUILT_LIB\25Apr2013_Discard_MaxIter_CCC_DEBUG_mx_my;$(LibraryPath)</LibraryPath>
+    <TargetName>UAV_automatic_software</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\OpenCV_1.1\cv\include;C:\OpenCV_1.1\cxcore\include;C:\OpenCV_1.1\otherlibs\highgui;C:\OpenCV_1.1\cvaux\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV_1.1\lib;C:\OpenCV_1.1\ENHANCED_BUILT_LIB\25Apr2013_Discard_MaxIter_CCC_DEBUG_mx_my;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>C:\OpenCV_2.4.6\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/AutomatedAT.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;cxcore.lib;cv.lib;highgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/UAV_automatic_software.exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\OpenCV_1.1\lib;C:\OpenCV_2.4.6\build\x86\vc9\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;cxcore.lib;cv.lib;highgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/UAV_automatic_software.exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\OpenCV_1.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\OpenCV_2.4.6\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;__LSM_DEBUGGING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/AutomatedAT.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;cxcore.lib;cv.lib;highgui.lib;opencv_core246d.lib;opencv_highgui246d.lib;opencv_imgproc246d.lib;opencv_objdetect246d.lib;opencv_ml246d.lib;opencv_video246d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/AutomatedAT.exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\OpenCV_1.1\lib;C:\OpenCV_2.4.6\build\x86\vc9\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\OpenCV_1.1\cvaux\include;C:\OpenCV_1.1\otherlibs\highgui;C:\OpenCV_1.1\cxcore\include;C:\OpenCV_1.1\cv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;cxcore.lib;cv.lib;highgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/UAV_automatic_software.exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\OpenCV_1.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Config\file_find.cpp" />
+    <ClCompile Include="source\KLT\AerialSimulator.cpp" />
+    <ClCompile Include="source\KLT\Array.cpp" />
+    <ClCompile Include="source\KLT\Bits.cpp" />
+    <ClCompile Include="source\KLT\cvfast.cpp" />
+    <ClCompile Include="source\KLT\cv_fast_10.cc" />
+    <ClCompile Include="source\KLT\cv_fast_10.cpp" />
+    <ClCompile Include="source\KLT\cv_fast_11.cpp" />
+    <ClCompile Include="source\KLT\cv_fast_12.cpp" />
+    <ClCompile Include="source\KLT\cv_fast_9.cpp" />
+    <ClCompile Include="source\KLT\ExteriorOrientation.cpp" />
+    <ClCompile Include="source\KLT\Global.cpp" />
+    <ClCompile Include="source\KLT\GP.cpp" />
+    <ClCompile Include="source\KLT\KLTTracker.cpp" />
+    <ClCompile Include="source\KLT\Matrix.cpp" />
+    <ClCompile Include="source\KLT\PhotoCoordinate.cpp" />
+    <ClCompile Include="source\KLT\Point.cpp" />
+    <ClCompile Include="source\KLT\RotationalMatrix.cpp" />
+    <ClCompile Include="source\KLT\SeqSimAT.cpp" />
+    <ClCompile Include="source\KLT\SimAT.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\Orthoimage\max.cpp" />
+    <ClCompile Include="source\Orthoimage\min.cpp" />
+    <ClCompile Include="source\Orthoimage\mldivide.cpp" />
+    <ClCompile Include="source\Orthoimage\ortho_function.cpp" />
+    <ClCompile Include="source\Orthoimage\ortho_function_emxAPI.cpp" />
+    <ClCompile Include="source\Orthoimage\ortho_function_emxutil.cpp" />
+    <ClCompile Include="source\Orthoimage\ortho_function_initialize.cpp" />
+    <ClCompile Include="source\Orthoimage\ortho_function_terminate.cpp" />
+    <ClCompile Include="source\Orthoimage\rtGetInf.cpp" />
+    <ClCompile Include="source\Orthoimage\rtGetNaN.cpp" />
+    <ClCompile Include="source\Orthoimage\rt_nonfinite.cpp" />
+    <ClCompile Include="source\Ortho_test\ortho.cpp" />
+    <ClCompile Include="source\SimAT\AT_Array.cpp" />
+    <ClCompile Include="source\SimAT\AT_Bits.cpp" />
+    <ClCompile Include="source\SimAT\AT_ExteriorOrientation.cpp" />
+    <ClCompile Include="source\SimAT\AT_GP.cpp" />
+    <ClCompile Include="source\SimAT\AT_PhotoCoordinate.cpp" />
+    <ClCompile Include="source\SimAT\AT_RotationalMatrix.cpp" />
+    <ClCompile Include="source\SimAT\AT_SeqSimAT.cpp" />
+    <ClCompile Include="source\SimAT\AT_SimAT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Config\file_find.h" />
+    <ClInclude Include="source\KLT\AerialSimulator.h" />
+    <ClInclude Include="source\KLT\Array.h" />
+    <ClInclude Include="source\KLT\Bits.h" />
+    <ClInclude Include="source\KLT\cvfast.h" />
+    <ClInclude Include="source\KLT\Definition.h" />
+    <ClInclude Include="source\KLT\ExteriorOrientation.h" />
+    <ClInclude Include="source\KLT\Global.h" />
+    <ClInclude Include="source\KLT\GP.h" />
+    <ClInclude Include="source\KLT\KLTTracker.h" />
+    <ClInclude Include="source\KLT\Matrix.h" />
+    <ClInclude Include="source\KLT\PhotoCoordinate.h" />
+    <ClInclude Include="source\KLT\Point.h" />
+    <ClInclude Include="source\KLT\RotationalMatrix.h" />
+    <ClInclude Include="source\KLT\SeqSimAT.h" />
+    <ClInclude Include="source\KLT\SimAT.h" />
+    <ClInclude Include="source\Orthoimage\max.h" />
+    <ClInclude Include="source\Orthoimage\min.h" />
+    <ClInclude Include="source\Orthoimage\mldivide.h" />
+    <ClInclude Include="source\Orthoimage\ortho_function.h" />
+    <ClInclude Include="source\Orthoimage\ortho_function_emxAPI.h" />
+    <ClInclude Include="source\Orthoimage\ortho_function_emxutil.h" />
+    <ClInclude Include="source\Orthoimage\ortho_function_initialize.h" />
+    <ClInclude Include="source\Orthoimage\ortho_function_terminate.h" />
+    <ClInclude Include="source\Orthoimage\ortho_function_types.h" />
+    <ClInclude Include="source\Orthoimage\rtGetInf.h" />
+    <ClInclude Include="source\Orthoimage\rtGetNaN.h" />
+    <ClInclude Include="source\Orthoimage\rtwtypes.h" />
+    <ClInclude Include="source\Orthoimage\rt_nonfinite.h" />
+    <ClInclude Include="source\Ortho_test\ortho.h" />
+    <ClInclude Include="source\SimAT\AT_Array.h" />
+    <ClInclude Include="source\SimAT\AT_Bits.h" />
+    <ClInclude Include="source\SimAT\AT_Definition.h" />
+    <ClInclude Include="source\SimAT\AT_ExteriorOrientation.h" />
+    <ClInclude Include="source\SimAT\AT_GP.h" />
+    <ClInclude Include="source\SimAT\AT_PhotoCoordinate.h" />
+    <ClInclude Include="source\SimAT\AT_RotationalMatrix.h" />
+    <ClInclude Include="source\SimAT\AT_SeqSimAT.h" />
+    <ClInclude Include="source\SimAT\AT_SimAT.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
